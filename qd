@@ -1,0 +1,107 @@
+warning: LF will be replaced by CRLF in public/index.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/App.tsx.
+The file will have its original line endings in your working directory
+[1mdiff --git a/public/favicon.ico b/public/favicon.ico[m
+[1mdeleted file mode 100644[m
+[1mindex bcd5dfd..0000000[m
+Binary files a/public/favicon.ico and /dev/null differ
+[1mdiff --git a/public/index.html b/public/index.html[m
+[1mindex aa069f2..bb91f77 100644[m
+[1m--- a/public/index.html[m
+[1m+++ b/public/index.html[m
+[36m@@ -24,7 +24,7 @@[m
+       work correctly both with client-side routing and a non-root public URL.[m
+       Learn how to configure a non-root public URL by running `npm run build`.[m
+     -->[m
+[31m-    <title>React App</title>[m
+[32m+[m[32m    <title>Contact Form</title>[m
+   </head>[m
+   <body>[m
+     <noscript>You need to enable JavaScript to run this app.</noscript>[m
+[1mdiff --git a/public/logo192.png b/public/logo192.png[m
+[1mdeleted file mode 100644[m
+[1mindex fc44b0a..0000000[m
+Binary files a/public/logo192.png and /dev/null differ
+[1mdiff --git a/public/logo512.png b/public/logo512.png[m
+[1mdeleted file mode 100644[m
+[1mindex a4e47a6..0000000[m
+Binary files a/public/logo512.png and /dev/null differ
+[1mdiff --git a/src/App.css b/src/App.css[m
+[1mindex 74b5e05..e69de29 100644[m
+[1m--- a/src/App.css[m
+[1m+++ b/src/App.css[m
+[36m@@ -1,38 +0,0 @@[m
+[31m-.App {[m
+[31m-  text-align: center;[m
+[31m-}[m
+[31m-[m
+[31m-.App-logo {[m
+[31m-  height: 40vmin;[m
+[31m-  pointer-events: none;[m
+[31m-}[m
+[31m-[m
+[31m-@media (prefers-reduced-motion: no-preference) {[m
+[31m-  .App-logo {[m
+[31m-    animation: App-logo-spin infinite 20s linear;[m
+[31m-  }[m
+[31m-}[m
+[31m-[m
+[31m-.App-header {[m
+[31m-  background-color: #282c34;[m
+[31m-  min-height: 100vh;[m
+[31m-  display: flex;[m
+[31m-  flex-direction: column;[m
+[31m-  align-items: center;[m
+[31m-  justify-content: center;[m
+[31m-  font-size: calc(10px + 2vmin);[m
+[31m-  color: white;[m
+[31m-}[m
+[31m-[m
+[31m-.App-link {[m
+[31m-  color: #61dafb;[m
+[31m-}[m
+[31m-[m
+[31m-@keyframes App-logo-spin {[m
+[31m-  from {[m
+[31m-    transform: rotate(0deg);[m
+[31m-  }[m
+[31m-  to {[m
+[31m-    transform: rotate(360deg);[m
+[31m-  }[m
+[31m-}[m
+[1mdiff --git a/src/App.tsx b/src/App.tsx[m
+[1mindex a53698a..4f559cd 100644[m
+[1m--- a/src/App.tsx[m
+[1m+++ b/src/App.tsx[m
+[36m@@ -1,24 +1,15 @@[m
+ import React from 'react';[m
+[31m-import logo from './logo.svg';[m
+ import './App.css';[m
+[32m+[m[32mimport Form from './Form';[m
+[32m+[m[32mimport Header from './Header'[m
+ [m
+ function App() {[m
+   return ([m
+     <div className="App">[m
+[31m-      <header className="App-header">[m
+[31m-        <img src={logo} className="App-logo" alt="logo" />[m
+[31m-        <p>[m
+[31m-          Edit <code>src/App.tsx</code> and save to reload.[m
+[31m-        </p>[m
+[31m-        <a[m
+[31m-          className="App-link"[m
+[31m-          href="https://reactjs.org"[m
+[31m-          target="_blank"[m
+[31m-          rel="noopener noreferrer"[m
+[31m-        >[m
+[31m-          Learn React[m
+[31m-        </a>[m
+[31m-      </header>[m
+[32m+[m
+[32m+[m[32m      <Header/>[m
+[32m+[m[32m      <Form/>[m
+[32m+[m[41m      [m
+     </div>[m
+   );[m
+ }[m
